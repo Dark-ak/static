@@ -6,14 +6,14 @@ import breakout from "../assets/breakout.png"
 const Feature = () => {
   return (
     <div>
-      <div className='flex items-center justify-center flex-col pt-14 pb-10 mx-3'>
+      <div className='flex items-center justify-center flex-col pt-14 pb-10 mx-3 md:py-24 border-b'>
         <div className='flex flex-col justify-center items-center gap-3 '>
           <p className='text-[#E63F3A] font-semibold'>Features</p>
-          <p className='text-3xl font-semibold text-center'>Analytics that feels like it’s from the future</p>
-          <p className='text-center text-[#475467] text-lg font'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
+          <p className='text-3xl font-semibold text-center md:text-4xl'>Analytics that feels like it’s from the future</p>
+          <p className='text-center text-[#475467] text-lg md:w-[75%] md:text-xl'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
         </div>
 
-        <div className='flex flex-col gap-10 mt-14'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center lg:grid-cols-3 gap-10 mt-14 mx-14'>
           <div className='felx flex-col items-center justify-center w-full '>
             <div className='flex  justify-center'>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="shadow border border-gray-300 p-2 rounded-lg h-10">
@@ -22,7 +22,7 @@ const Feature = () => {
             </div>
 
             <div className='flex justify-center flex-col items-center my-3'>
-              <p className='font-semibold text-lg'>Share team inboxes</p>
+              <p className='font-semibold text-lg md:text-xl text-center'>Share team inboxes</p>
               <p className='text-center text-[#475467]'>Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
             </div>
           </div>
@@ -36,7 +36,7 @@ const Feature = () => {
             </div>
 
             <div className='flex justify-center flex-col items-center my-3'>
-              <p className='font-semibold text-lg'>Deliver instant answers</p>
+              <p className='font-semibold text-lg md:text-xl text-center'>Deliver instant answers</p>
               <p className='text-center text-[#475467]'>An all-in-one customer service platform that helps you balance everything your customers need to be happy.</p>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Feature = () => {
             </div>
 
             <div className='flex justify-center flex-col items-center my-3'>
-              <p className='font-semibold text-lg'>Manage your team with reports</p>
+              <p className='font-semibold text-lg md:text-xl text-center'>Manage your team with reports</p>
               <p className='text-center text-[#475467]'>Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Feature = () => {
             </div>
 
             <div className='flex justify-center flex-col items-center my-3'>
-              <p className='font-semibold text-lg'>Connect with customers</p>
+              <p className='font-semibold text-lg md:text-xl text-center'>Connect with customers</p>
               <p className='text-center text-[#475467]'>Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</p>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Feature = () => {
             </div>
 
             <div className='flex justify-center flex-col items-center my-3'>
-              <p className='font-semibold text-lg'>Connect the tools you already use</p>
+              <p className='font-semibold text-lg md:text-xl text-center'>Connect the tools you already use</p>
               <p className='text-center text-[#475467]'>Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.</p>
             </div>
           </div>
@@ -81,7 +81,7 @@ const Feature = () => {
             </div>
 
             <div className='flex justify-center flex-col items-center my-3'>
-              <p className='font-semibold text-lg'>Our people make the difference</p>
+              <p className='font-semibold text-lg md:text-xl text-center'>Our people make the difference</p>
               <p className='text-center text-[#475467]'>We’re an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.</p>
             </div>
           </div>

@@ -4,11 +4,11 @@ import wu from "../assets/wu.png"
 const Review = () => {
   return (
     <div className='bg-[#F9FAFB]'>
-        <div className='flex flex-col pt-14 pb-12 items-center gap-10 mx-10'>
+        <div className='flex flex-col pt-14 pb-12 md:py-24 items-center gap-10 mx-10 md:px-14'>
             <img src={sisy} alt="" className='h-10 w-32' />
 
             <div className='flex items-center flex-col gap-10'>
-                <p className='text-3xl font-medium text-center'>We’ve been using Untitled to kick start every new project and can’t imagine working without it.</p>
+                <p className='text-3xl font-medium text-center md:text-5xl'>We’ve been using Untitled to kick start every new project and can’t imagine working without it.</p>
                 <div className='flex flex-col items-center gap-4'>
                     <img src={wu} alt="" className='w-16 h-16' />
                     <div className='flex flex-col justify-center'>

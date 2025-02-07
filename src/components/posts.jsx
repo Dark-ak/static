@@ -9,17 +9,21 @@ import lana from "../assets/lana.png"
 
 const Posts = () => {
     return (
-        <div>
-            <div className='py-16 px-5 flex flex-col '>
-                <div className='flex flex-col gap-4'>
-                    <div className='flex flex-col gap-1'>
-                        <p className='text-[#E63F3A] font-semibold text-sm'>Our blog</p>
-                        <p className='text-3xl font-semibold'>Latest blog posts </p>
+        <div className="md:mx-20">
+            <div className='py-16 px-5 flex flex-col md:py-24'>
+                <div className='flex justify-between items-center'>
+                    <div className="flex flex-col gap-4">
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-[#E63F3A] font-semibold text-sm'>Our blog</p>
+                            <p className='text-3xl font-semibold md:text-4xl'>Latest blog posts </p>
+                        </div>
+                        <p className='text-[#475467] text-lg md:text-xl'>Tool and strategies modern teams need to help their companies grow.</p>
                     </div>
-                    <p className='text-[#475467] text-lg'>Tool and strategies modern teams need to help their companies grow.</p>
+                    <button className='bg-[#E63F3A] text-white font-medium rounded-lg py-3 px-5 hidden md:flex'>View all posts</button>
+
                 </div>
 
-                <div className='py-10 grid grid-cols-1 gap-14'>
+                <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14'>
                     <div className='flex flex-col gap-4'>
                         <img src={p1} alt="" />
                         <div className='flex flex-col gap-2'>
@@ -34,7 +38,7 @@ const Posts = () => {
                         </div>
 
                         <div className='flex gap-2 py-2'>
-                            <img src={olivia} alt="" className='h-fit'/>
+                            <img src={olivia} alt="" className='h-fit' />
                             <div className='flex flex-col w-full '>
                                 <p className='text-sm font-semibold'>Olivia Rhye</p>
                                 <p className='text-sm text-[#475467]'>20 Jan 2024</p>
@@ -56,7 +60,7 @@ const Posts = () => {
                         </div>
 
                         <div className='flex gap-2 py-2'>
-                            <img src={phoenix} alt="" className='h-fit'/>
+                            <img src={phoenix} alt="" className='h-fit' />
                             <div className='flex flex-col w-full '>
                                 <p className='text-sm font-semibold'>Phoenix Baker</p>
                                 <p className='text-sm text-[#475467]'>19 Jan 2024</p>
@@ -78,7 +82,7 @@ const Posts = () => {
                         </div>
 
                         <div className='flex gap-2 py-2'>
-                            <img src={lana} alt="" className='h-fit'/>
+                            <img src={lana} alt="" className='h-fit' />
                             <div className='flex flex-col w-full '>
                                 <p className='text-sm font-semibold'>Lana Steiner</p>
                                 <p className='text-sm text-[#475467]'>18 Jan 2024</p>
@@ -87,7 +91,7 @@ const Posts = () => {
                     </div>
                 </div>
 
-                <button className='bg-[#E63F3A] text-white font-medium rounded-lg py-3 px-5'>View all posts</button>
+                <button className='bg-[#E63F3A] text-white font-medium rounded-lg py-3 px-5 md:hidden'>View all posts</button>
             </div>
         </div>
     )

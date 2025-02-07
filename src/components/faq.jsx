@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Ask from './ask';
 
 const Faq = () => {
     const [active, setActive] = useState(0);
@@ -6,43 +7,41 @@ const Faq = () => {
         {
             id: 1,
             head: "Is there a free trial available?",
-            desc: "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
         },
         {
             id: 2,
             head: "Can I change my plan later?",
-            desc: ""
         },
         {
             id: 3,
             head: "What is your cancellation policy?",
-            desc: ""
+        
         },
         {
             id: 4,
             head: "Can other info be added to an invoice?",
-            desc: ""
+        
         },
         {
             id: 5,
             head: "How does billing work?",
-            desc: ""
+
         },
         {
             id: 6,
             head: "How do I change my account email?",
-            desc: ""
+
         }
     ]
 
     return (
         <div>
-            <div className='pt-14 flex flex-col items-center mx-2 mb-4'>
+            <div className='pt-14 flex flex-col items-center mx-2 mb-4 md:py-24'>
                 <div className='flex items-center flex-col gap-5'>
-                    <p className='text-3xl font-semibold text-center'>Frequently Asked Questions</p>
+                    <p className='text-3xl font-semibold text-center md:text-4xl'>Frequently Asked Questions</p>
                     <p className='text-center text-[#475467] text-lg font-normal'>Everything you need to know about the product and billing.</p>
                 </div>
-                <div className='py-4'>
+                <div className='py-4 md:py-10 max-w-3xl md:w-3xl'>
                     {data.map((d) => {
 
                         return (
@@ -50,7 +49,7 @@ const Faq = () => {
                                 <div className={`flex justify-between  flex-col m-5 gap-4 ${active == d.id ? "h-fit" : "h-fit"}`}>
                                     <div className='flex justify-between items-center gap-4'>
                                         <p className='text-lg font-medium '>{d.head}</p>
-                                        <div onClick={() => {
+                                        <div className='cursor-pointer' onClick={() => {
                                             setActive(active != d.id ? d.id : 0)
                                             console.log(active)
                                         }}>
@@ -62,11 +61,15 @@ const Faq = () => {
                                             }
                                         </div>
                                     </div>
-                                    <p className={`text-[#475467] ${active == d.id ? "flex" : "hidden"}`}>{d.desc}</p>
+                                    <p className={`text-[#475467] ${active == d.id ? "flex" : "hidden"}`}>Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
                                 </div>
                             </div>
                         )
                     })}
+                </div>
+
+                <div className='w-full'>
+                    <Ask />
                 </div>
             </div>
         </div>

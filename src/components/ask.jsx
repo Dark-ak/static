@@ -5,7 +5,7 @@ import avatar from "../assets/avatar.png"
 const Ask = () => {
   return (
     <div className=''>
-        <div className='bg-[#F9FAFB] flex flex-col gap-6 items-center justify-center py-10 mx-4'>
+        <div className='bg-[#F9FAFB] flex flex-col gap-6 items-center justify-center py-10 mx-4  md:mx-24'>
             <img src={avatar} alt="" />
             <div className='flex flex-col items-center'>
                 <p className='font-semibold text-xl'>Still have questions?</p>
